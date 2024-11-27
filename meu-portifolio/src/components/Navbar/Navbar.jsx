@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Navbar.module.css"
+import {getImageUrl} from "../../ultis.js"
 
 const Navbar = () => {
     return(
@@ -7,6 +8,11 @@ const Navbar = () => {
             <a className={styles.title} href="/">Portifolio</a>
 
             <div className={styles.menu}>
+                
+                <img className={styles.menuBtn}
+                  src={getImageUrl("nav/hamburg.png")}  
+                  alt="menu-button" />
+
                 <ul className={styles.menuItens}>
 
                     <li>
