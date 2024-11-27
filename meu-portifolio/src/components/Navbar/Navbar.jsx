@@ -1,19 +1,30 @@
-import React from "react";
+import React, {useState} from "react";
 import styles from "./Navbar.module.css"
 import {getImageUrl} from "../../ultis.js"
 
 const Navbar = () => {
+
+    const [menuOpen, setMenuOpen] = useState(false);
+
     return(
         <nav className={styles.navbar}>
             <a className={styles.title} href="/">Portifolio</a>
 
             <div className={styles.menu}>
-                
+        
                 <img className={styles.menuBtn}
-                  src={getImageUrl("nav/hamburg.png")}  
-                  alt="menu-button" />
+                  src={ menuOpen 
+                    ? getImageUrl("nav/hamburg.png")
+                    : getImageUrl("nav/closeIcon.png")
+                
+                }  
+                  alt="menu-button"
 
-                <ul className={styles.menuItens}>
+                  onClick={ () => setMenuOpen(!menuOpen)} />
+
+                <ul className={`${styles.menuItens} ${menuOpen && styles.menuOpen} `}
+                onClick={() => {setMenuOpen(false)}}
+                >
 
                     <li>
                         <a href="#Sobre"> Sobre </a>
