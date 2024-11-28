@@ -14,13 +14,12 @@ const Navbar = () => {
         
                 <img className={styles.menuBtn}
                   src={ menuOpen 
-                    ? getImageUrl("nav/hamburg.png")
-                    : getImageUrl("nav/closeIcon.png")
+                    ? getImageUrl("nav/closeIcon.png")
+                    :  getImageUrl("nav/hamburg.png")
                 
                 }  
                   alt="menu-button"
-
-                  onClick={ () => setMenuOpen(!menuOpen)} />
+                  onClick={() => setMenuOpen(!menuOpen)} />
 
                 <ul className={`${styles.menuItens} ${menuOpen && styles.menuOpen} `}
                 onClick={() => {setMenuOpen(false)}}

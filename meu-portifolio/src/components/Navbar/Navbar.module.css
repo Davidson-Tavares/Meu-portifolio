@@ -24,10 +24,13 @@
     display: flex;
 }
 
+
+
 .menuItens {
     display: flex;
     gap: 47px;
     list-style: none;
+    
 }
 
 .menuItens a {
@@ -36,10 +39,12 @@
     text-decoration: none;
 }
 
-/*/////////// responsividade */
-/*trocsr psrs 830px a responsividade eu coloquei 100so para teste*/
 
-@media screen and (max-width: 1000px) {
+
+/*/////////// responsividade */
+/*trocar psrs 830px a responsividade eu coloquei 1000 so para teste*/
+
+@media screen  and (max-width: 830px){
     
     .navbar {
         flex-direction: column;
@@ -62,7 +67,7 @@
     }
 
     .menuItens {
-      display:none;
+        display: none;
         flex-direction: column;
         align-items: center;
         gap: 13px;
