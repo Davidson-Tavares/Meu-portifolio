@@ -15,7 +15,7 @@ const Hero = () => {
                 <a href="mailto: myemail.com" className={styles.contactBtn}>contact Me</a>
         
             </div>   
-                    <img src={getImageUrl('hero/heroImage.png')} alt="Hero image" className={styles.heroImg}></img>
+                    <img src={getImageUrl('hero/foto-principal3.png')} alt="Hero image" className={styles.heroImg}></img>
                 
                 <div className={styles.topBlur} />
                 <div className={styles.bottomBlur} />
