@@ -7,9 +7,8 @@ const About = () => {
     return(
 
         <section className={Styles.container} id="about">
-
         <h2 className={Styles.title}>About</h2>
-        <div className={Styles.content}></div>
+        <div className={Styles.content}>
 
         <img
         src={getImageUrl('about/foto1.png')} 
@@ -48,7 +47,9 @@ const About = () => {
                 </p>
           </div>
           </li>
+          
         </ul>
+        </div>
 
 
 
