@@ -1,68 +1,51 @@
 import React from "react";
+
+import Styles from "../Experience/Experience.module.css"
+import skills from "../../data/skills.json";
+import history from "../../data/history.json";
 import { getImageUrl } from "../../ultis";
+
 
 const Experience = () => {
     return(
-        <section className={Styles.container}>
-            <h2 className={styles.title}>Experience</h2>
-            <div>
-                <ul className={steyles.content}>
-                    <li>
-                        <img src={getImageUrl("experience/html.png")} alt="" />
-                    </li>
+        <section className={Styles.container} id="experince">
+            <h2 className={Styles.title}>Experience</h2>
+                <div className={Styles.content}>
+                    <div className={Styles.skills}>
+                        {skills.map((skill, id) => {
+                            return ( 
+                                <div key={id} className={Styles.skill}>
+                                    <div className={Styles.skillImageContainer}>
+                                        <img src={ getImageUrl(skill.imageSrc)}  alt={skill.title} />
+                                    </div>
+                                    <p>{skill.title}</p>
 
-                    <li>
-                        <img src={getImageUrl("experience/css3.png")} alt="" />
-                    </li>
+                                </div>
+                            );
+                        })}
+                    </div>
+                    <ul className={Styles.history}>
+                        {history.map((historyItem, id) => {
+                            return(
+                                <li key={id} className={Styles.historyItem}>
+                                    <img src={getImageUrl(historyItem.imageSrc)}
+                                     alt={`${historyItem.organisation} Logo`} />
 
-                    <li>
-                        <img src={getImageUrl("experience/node.png")} alt="" />
-                    </li>
-
-                    <li>
-                        <img src={getImageUrl("experience/react.png")} alt="" />
-                    </li>
-
-                    <li>
-                        <img src={getImageUrl("experience/mongo.png")} alt="" />
-                    </li>
-                </ul>
-
-                <div>
-                    <ul>
-                        <li> 
-                            <img src={getImageUrl("experience/google.png")} alt="google image" />
-                            <h3>Software Engineer, Google</h3>
-                            <p>set, 2012- present</p>
-                            <li>Worked on Google Maps</li>
-                            <li>Reduced load times by 50%</li>
-
-                        </li>
-
-                        <li> 
-                            <img src={getImageUrl("experience/microsoft.png")} alt="google image" />
-                            <h3>UL D esigner, Microsoft</h3>
-                            <p>Ago, 2021 - Ago, 2022</p>
-                            <li>Worked on Windows 11</li>
-                            <li>Designed the control panel</li>
-
-                        </li>
-
-                        <li> 
-                            <img src={getImageUrl("experience/netflix.png")} alt="google image" />
-                            <h3>SWE Intern, Netflix</h3>
-                            <p>Apr, 2010 - jul, 2020</p>
-                            
-                            <li>Worked on component library</li>
-                            <li>Helped create UI components</li>
-
-                        </li>
+                                     <div className={Styles.historyItemDetails}>
+                                        <h3>{`${historyItem.role}, ${historyItem.organisation}`}</h3>
+                                        <p>{`${historyItem.startDate} - ${historyItem.endDate}`}</p>
+                                        <ul>
+                                            {historyItem.experiences.map((experience, id) => {
+                                                return <li key={id}>{experience}</li>
+                                            })}
+                                        </ul>
+                                     </div>
+                                </li>
+                            );
+                        })}
                     </ul>
-                </div>
 
-            </div>
-            
-
+                </div>    
         </section>
     )
 }
