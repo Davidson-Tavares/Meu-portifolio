@@ -8,7 +8,7 @@ import { getImageUrl } from "../../ultis";
 
 const Experience = () => {
     return(
-        <section className={Styles.container} id="experince">
+        <section className={Styles.container} id="experience">
             <h2 className={Styles.title}>Experience</h2>
                 <div className={Styles.content}>
                     <div className={Styles.skills}>
