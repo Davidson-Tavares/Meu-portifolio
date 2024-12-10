@@ -1,22 +1,20 @@
 import React from "react";
-import Styles from "../Projects/Projects.module.css"
-import { getImageUrl } from "../../ultis";
+import styles from "./Projects.module.css";
 
-const Projects = () => {
-    return(
-        <section className={Styles.container} id="projects">
-            <h2 className={Styles.title}> Projects </h2>
-            <div key={id}>
-                im
+import projects from "../../data/projects.json";
+import { ProjectCard } from "./ProjectCard.jsx";
 
-            </div>
+ const Projects = () => {
+  return (
+    <section className={styles.container} id="projects">
+      <h2 className={styles.title}>Projects</h2>
+      <div className={styles.projects}>
+        {projects.map((project, id) => {
+          return <ProjectCard key={id} project={project} />;
+        })}
+      </div>
+    </section>
+  );
+};
 
-          
-            
-        </section>
-    )
-}
-
-
-
-export default Projects
+export default  Projects;
