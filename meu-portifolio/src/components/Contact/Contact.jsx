@@ -18,7 +18,7 @@ const Contact = ()=> {
                         <img src={getImageUrl('contact/email.png')} alt="" /><a href="http://"> myemail.com </a>
                     </li>
                     <li>
-                        <img src={getImageUrl('contact/linkedin.png')} alt="" /><a href="http://"> myLinkedym.com </a>
+                        <img src={getImageUrl('contact/linkedin.png')} alt="" /><a href="http:https://www.linkedin.com/in/davidsontavares/"> myLinkedym.com </a>
                     </li>
                     <li>
                         <img src={getImageUrl('contact/github.png')} alt="" /><a href="http://"> myGitHub.com</a>
