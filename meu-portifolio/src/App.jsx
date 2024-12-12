@@ -11,7 +11,7 @@ function App() {
 
   return (
 
-    <div className={Styles.App}>
+    <div className={Styles.App} >
       <Navbar />
       <Hero />
       <About />

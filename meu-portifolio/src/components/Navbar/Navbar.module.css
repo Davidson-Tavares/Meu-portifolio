@@ -14,13 +14,10 @@
 
 
 .logo {
-    font-size: 30px;
-    font-weight: 600;
-    text-decoration: none;
     color: var(--color-text);
 }
 .imgLogo{
-width: 50%;
+width: 15%;
 }
 
 .imgLogo:hover{
@@ -54,10 +51,37 @@ width: 50%;
     color: var(--color-primary);
 }
 
+/*/////////////DARK MODE*/
+
+.darkMode{
+    color: var(--color-text);
+    margin-left: 8%;
+}
+
+.btndark{
+    background-color: var(--color-bg);
+    border: none;
+
+}
+
+.imgdark{
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    width: 20%;
+
+}
+.imglight{
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    width: 20%;
+
+}
+
+
 
 
 /*/////////// responsividade */
-/*trocar psrs 830px a responsividade eu coloquei 1000 so para teste*/
+
 
 @media screen  and (max-width: 830px){
     
@@ -108,5 +132,25 @@ width: 50%;
         z-index: 1;
     }
 
+    .darkMode{
+        position: absolute;
+        right: 0;
+        margin-right: 20%;
+        flex-direction: column;
+        align-items: flex-end;
+        z-index: 1;
+        margin-top: 2%;
+    }
+
 
 }
+
+@media screen and (max-width: 520px) {
+
+    .darkMode{
+        margin-right: 30%; 
+    }
+
+    
+}
+

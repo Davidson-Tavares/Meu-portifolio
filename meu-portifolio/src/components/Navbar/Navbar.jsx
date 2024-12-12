@@ -1,11 +1,11 @@
 import React, {useState} from "react";
 import styles from "./Navbar.module.css"
-import {getImageUrl} from "../../ultis.js"
+import {getImageUrl} from "../../ultis.js";
+
 
 const Navbar = () => {
 
     const [menuOpen, setMenuOpen] = useState(false);
-
     return(
         <nav className={styles.navbar}>
 
@@ -23,7 +23,10 @@ const Navbar = () => {
                 
                 }  
                   alt="menu-button"
-                  onClick={() => setMenuOpen(!menuOpen)} />
+                  onClick={() => setMenuOpen(!menuOpen)}
+                />
+
+                    
 
                 <ul className={`${styles.menuItens} ${menuOpen && styles.menuOpen} `}
                 onClick={() => {setMenuOpen(false)}}
@@ -45,16 +48,19 @@ const Navbar = () => {
                     <li>
                         <a href="#contact">Contatos</a>
                     </li>
-
-                    <li>
-                        <button className={styles.darkMode}>Dakmode</button>
-                    </li>
-
                 </ul>
-
             </div>
 
+            <div className={styles.darkMode}>
+            <button  className={styles.btndark} >
+                 <img   className={styles.imglight} src={getImageUrl("nav/light_mode_40dp_FFF_FILL0_wght400_GRAD0_opsz40.png")} alt="" /> 
+                 <img   className={styles.imgdark} src={getImageUrl("nav/dark_mode_40dp_000_FILL0_wght400_GRAD0_opsz40.png")} alt="" /> 
+                 
+            </button>
 
+
+            </div>
+           
         </nav>
     )
 }
