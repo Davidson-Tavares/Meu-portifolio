@@ -6,16 +6,17 @@ const Hero = () => {
     return(
         <section className={styles.container}>
             <div className={styles.content}>
-                <h1 className={styles.title}>Hi , I'm Ada</h1>
+                <h1 className={styles.title}>Hello Word!</h1>
                     <p className={styles.description}>
-                    I'm full-stack developer with 5 years of experiense using React and
-                    Node.js. Reach out if you'd like to learn more!
+                    Meu nome é Davidson e sou estudante de Análise e Desenvolvimento de Sistemas.
+                    Atualmente, estou expandindo meus conhecimentos e habilidades através
+                    de um curso na Udemy sobre Web Moderno.
                     </p>
 
-                <a href="mailto: myemail.com" className={styles.contactBtn}>contact Me</a>
+                <a href="mailto: davidsonandre1@gmail.com" className={styles.contactBtn}>contact Me</a>
         
             </div>   
-                    <img src={getImageUrl('hero/foto-principal3.png')} alt="Hero image" className={styles.heroImg}></img>
+                <img src={getImageUrl('hero/mao-ascenando.png')} alt="Hero image" className={styles.emoji}></img>
                 
                 <div className={styles.topBlur} />
                 <div className={styles.bottomBlur} />

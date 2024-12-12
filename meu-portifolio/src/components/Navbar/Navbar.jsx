@@ -8,7 +8,11 @@ const Navbar = () => {
 
     return(
         <nav className={styles.navbar}>
-            <a className={styles.title} href="/">Portifolio</a>
+
+            
+            <a className={styles.logo} href="/">
+            <img src={getImageUrl("nav/D-branco.png")} alt="logo" className={styles.imgLogo} />
+            </a>
 
             <div className={styles.menu}>
         
@@ -39,7 +43,11 @@ const Navbar = () => {
 
 
                     <li>
-                        <a href="#contatos">Contatos</a>
+                        <a href="#contact">Contatos</a>
+                    </li>
+
+                    <li>
+                        <button className={styles.darkMode}>Dakmode</button>
                     </li>
 
                 </ul>

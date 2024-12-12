@@ -13,11 +13,22 @@
 }
 
 
-.title {
+.logo {
     font-size: 30px;
     font-weight: 600;
     text-decoration: none;
     color: var(--color-text);
+}
+.imgLogo{
+width: 50%;
+}
+
+.imgLogo:hover{
+    content: url("../../../assets/nav/D-azul.png");
+}
+
+.menuBtn{
+    display: none;
 }
 
 .menu {
@@ -37,6 +48,10 @@
     font-size: 25px;
     color: var(--color-text);
     text-decoration: none;
+}
+
+.menuItens a:hover{
+    color: var(--color-primary);
 }
 
 

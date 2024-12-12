@@ -7,11 +7,11 @@ const About = () => {
     return(
 
         <section className={Styles.container} id="about">
-        <h2 className={Styles.title}>About</h2>
+        <h2 className={Styles.title}>Sobre mim</h2>
         <div className={Styles.content}>
 
         <img
-        src={getImageUrl('about/foto1.png')} 
+        src={getImageUrl('about/foto-principal3.png')} 
         alt=" Me sitting whit a leptop"
         className={Styles.aboutImage}
         />
