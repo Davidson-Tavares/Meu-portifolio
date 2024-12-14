@@ -13,7 +13,7 @@ const Hero = () => {
                     de um curso na Udemy sobre Web Moderno.
                     </p>
 
-                <a href="mailto: davidsonandre1@gmail.com" className={styles.contactBtn}>contact Me</a>
+                <a href="mailto: davidsonandre1@gmail.com" className={styles.contactBtn}>contact Me</a>  
         
             </div>   
                 <img src={getImageUrl('hero/mao-ascenando.png')} alt="Hero image" className={styles.emoji}></img>

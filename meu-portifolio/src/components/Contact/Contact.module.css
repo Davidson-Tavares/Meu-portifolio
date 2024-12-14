@@ -6,7 +6,7 @@
     margin-top: 120px;
     color: var(--color-text);
     display: flex;
-    justify-content:space-around;
+    justify-content:space-between;
     align-items: center;
     gap: 10px;
     padding: 58px 10%;
@@ -14,7 +14,7 @@
 
 .title{
     font-weight: 700;
-    font-size: 80px;
+    font-size: 40px;
     letter-spacing: 4px;
 
 }
@@ -28,24 +28,20 @@
 
 .item{
     display: flex;
-    flex-direction: column;
     list-style: none;
-    text-decoration: none;}
-
-.itens {
-   color: var(--color-text);
-    
-}
-
-.item img  {
-    width: 50px;
-    height: 50px;
-    
-}
-
-.item a {
-    color: var(--color-text);
     text-decoration: none;
+    
+  }
+
+.itens a {
+   color: var(--color-text);
+   font-size: 40px;
+   margin: 10px;
+    
+}
+
+.itens a:hover{
+  color: var(--color-primary);
 }
 
 @media screen and (max-width: 830px) {
@@ -63,4 +59,21 @@
     .links {
       align-items: center;
     }
+  }
+
+  @media screen and (max-width:566px) {
+    .title{
+      font-weight: 700;
+      font-size:30px;
+      
+  
+  }
+
+  .description{
+    font-weight: 400;
+    font-size: 25px;
+
+
+}
+
   }

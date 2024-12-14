@@ -5,7 +5,7 @@
   },
   {
     "title": "CSS",
-    "imageSrc": "skills/css.png"
+    "imageSrc": "skills/css3.png"
   },
   {
     "title": "React",
@@ -17,6 +17,6 @@
   },
   {
     "title": "MongoDB",
-    "imageSrc": "skills/mongodb.png"
+    "imageSrc": "skills/mongo.png"
   }
 ]
