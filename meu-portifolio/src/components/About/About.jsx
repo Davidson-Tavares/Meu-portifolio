@@ -1,60 +1,55 @@
 import React from "react";
 import Styles from "../About/About.module.css"
 import { getImageUrl } from "../../ultis";
+import history from "../../data/history.json";
 
 const About = () => {
 
-    return(
+    return (
 
         <section className={Styles.container} id="about">
-        <h2 className={Styles.title}>Sobre mim</h2>
-        <div className={Styles.content}>
+            <h2 className={Styles.title}>Formação</h2>
+            <div className={Styles.content}>
 
-        <img
-        src={getImageUrl('about/foto-principal3.png')} 
-        alt=" Me sitting whit a leptop"
-        className={Styles.aboutImage}
-        />
-        <ul className={Styles.aboutItems}>
-          <li className={Styles.aboutItem}>
+                <img
+                    src={getImageUrl('about/foto-principal3.png')}
+                    alt=" Me sitting whit a leptop"
+                    className={Styles.aboutImage}
+                />
 
-            <img src={getImageUrl('about/cursor.png')}  />
-            
-            <div className={Styles.aboutItemText}>
-                <h3>Frontend Developer</h3>
-                <p>
-                     I´m a frontend developer with experience is bui and optimized sites
-                </p>
-          </div>
-          </li>
 
-          <li className={Styles.aboutItem}>
-            <img src={ getImageUrl('about/pc.png')}  />
-            <div className={Styles.aboutItemText}>
-                <h3>Backend Developer</h3>
-                <p>
-                    I have experience developing fast and optimised and APIs
-                </p>
-          </div>
-          </li>
+                <ul className={Styles.history}>
+                    {history.map((historyItem, id) => {
 
-          <li className={Styles.aboutItem}>
-            <img src={getImageUrl('about/layout.png')}  />
-            <div className={Styles.aboutItemText}>
-                <h3>UI Designer</h3>
-                <p>
-                    I have designed multiple lamding pages and have systemas as well
-                </p>
-          </div>
-          </li>
-          
-        </ul>
-        </div>
+                        return (
+
+                            <li key={id} className={Styles.historyItem}>
+                                <img src={getImageUrl(historyItem.imageSrc)}
+                                    alt={`${historyItem.organisation} Logo`} />
+
+                                <div className={Styles.historyItemDetails}>
+
+                                    <h3>{`${historyItem.role}, ${historyItem.organisation}`}</h3>
+                                    <p>{`${historyItem.startDate} - ${historyItem.endDate}`}</p>
+                                    <ul>
+                                        {historyItem.experiences.map((experience, id) => {
+                                            return <li key={id}>{experience}</li>
+                                        })}
+                                    </ul>
+                                </div>
+                            </li>
+                        );
+                    })}
+                </ul>
+
+
+
+            </div>
 
 
 
 
-</section>
+        </section>
     )
 }
 

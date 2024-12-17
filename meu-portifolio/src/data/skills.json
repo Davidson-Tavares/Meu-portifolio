@@ -18,5 +18,10 @@
   {
     "title": "MongoDB",
     "imageSrc": "skills/mongo.png"
+  },
+  {
+    "title":"JavaScript",
+    "imageSrc":"skills/javaScript.png"
   }
+ 
 ]
