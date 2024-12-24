@@ -16,11 +16,11 @@
       "source": "https://github.com/Davidson-Tavares/jogo-mata-mosquito"
     },
     {
-      "title": "Project C",
-      "imageSrc": "projects/clone spotfy.png",
-      "description": "This is a project made to learn the latest languages by building an app.",
-      "skills": ["React", "Express", "Node"],
-      "demo": "https://www.example.com",
-      "source": "https://www.github.com"
+      "title": "App-Orçamento-Pessoal",
+      "imageSrc": "projects/App-orçamento.png",
+      "description": "Projeto realizado durante o curso de desenvolvimento web.",
+      "skills": ["Html", "CSS", "JavaScript"],
+      "demo": "https://676a2b6e5a06862d8e347c21--app-planejamento-pessoal.netlify.app/",
+      "source": "https://github.com/Davidson-Tavares/App-orcamento-pessoal"
     }
   ]
