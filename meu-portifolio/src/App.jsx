@@ -6,12 +6,15 @@ import About from './components/About/About'
 import Experience from './components/Experience/Experience'
 import Projects from "./components/Projects/Projects"
 import Contact from "./components/Contact/Contact"
+import { ThemeProvider } from '../ThemeProvider'
+import Toggle from './components/Toggle/Toggle'
 
 function App() {
-
+  
   return (
-
-    <div className={Styles.App} >
+<ThemeProvider>
+    <div className={Styles.App}  >
+      <Toggle />
       <Navbar />
       <Hero />
       <About />
@@ -19,7 +22,7 @@ function App() {
       <Projects />
       <Contact />
     </div>
-
+</ThemeProvider>
   )
 }
 

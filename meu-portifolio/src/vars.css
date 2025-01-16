@@ -12,3 +12,11 @@
 --font-robot: "Roboto"
     
 }
+
+[data-theme = "dark"]{
+    --color-text:black;
+    --color-primary: #19376d ;
+    --color-secundar: #04152d;
+    --color-dark: #04152d;
+    --color-bg:#576cbc;
+}
