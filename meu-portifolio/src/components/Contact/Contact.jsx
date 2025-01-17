@@ -21,29 +21,29 @@ const Contact = ()=> {
             <div>
                 <ul className={Styles.item}> 
                     <li className={Styles.itens}>
-                        <a href="https://www.facebook.com/"> <FaFacebook />  </a>
+                        <a href="https://www.facebook.com/davidson.andre.77/" target="_blank"> <FaFacebook />  </a>
 
                     </li>
 
                     <li className={Styles.itens}>
-                        <a href="https://github.com/Davidson-Tavares"> <FaGithub /> </a>
+                        <a href="https://github.com/Davidson-Tavares" target="_blank"> <FaGithub /> </a>
                         
                     </li>
 
                     <li className={Styles.itens}>
-                        <a href="https://www.linkedin.com/in/davidsontavares/"> <FaLinkedin />  </a>
+                        <a href="https://www.linkedin.com/in/davidsontavares/" target="_blank"> <FaLinkedin />  </a>
                         
                     </li>
 
                     <li className={Styles.itens}>
-                        <a href="https://www.instagram.com/davidson.andre1/"> <FaInstagram />  </a>
+                        <a href="https://www.instagram.com/davidson.andre1/" target="_blank"> <FaInstagram />  </a>
                         
                     </li>
 
-                    <li className={Styles.itens}>
+                   {/* <li className={Styles.itens}>
                         <a href="http://"> <BsThreadsFill />  </a>
                         
-                    </li>
+                    </li>  para o link do threads */}
                 </ul>
             </div>
 

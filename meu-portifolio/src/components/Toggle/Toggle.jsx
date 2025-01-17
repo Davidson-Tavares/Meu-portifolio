@@ -12,7 +12,7 @@ const Toggle = () => {
   return (
     <button onClick={toggleTheme} style={{ border: 'none', background: 'none', cursor: 'pointer' }}>
       <img
-        src={theme === 'light' ? 'light' : 'nav/light_mode_40dp_FFF_FILL0_wght400_GRAD0_opsz40.png'}
+        src={theme === 'light' ? '/light.png' : '/dark.png'}
         alt={theme === 'light' ? 'Switch to Dark Mode' : 'Switch to Light Mode'}
         style={{ width: '30px', height: '30px' }}
       />

@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import styles from "./Navbar.module.css"
 import {getImageUrl} from "../../ultis.js";
+import Toggle from "../Toggle/Toggle.jsx";
 
 
 const Navbar = () => {
@@ -53,9 +54,11 @@ const Navbar = () => {
 
             <div className={styles.darkMode}>
             <button  className={styles.btndark} >
-                 <img   className={styles.imglight} src={getImageUrl("nav/light_mode_40dp_FFF_FILL0_wght400_GRAD0_opsz40.png")} alt="" /> 
-                 <img   className={styles.imgdark} src={getImageUrl("nav/dark_mode_40dp_000_FILL0_wght400_GRAD0_opsz40.png")} alt="" /> 
+                 <img   className={styles.imglight} src={getImageUrl("nav/light.png")} alt="" /> 
+                 <img   className={styles.imgdark} src={getImageUrl("nav/dark.png")} alt="" /> 
             </button>
+
+            <Toggle/>
 
 
             </div>

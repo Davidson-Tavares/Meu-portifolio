@@ -2,7 +2,7 @@
     {
       "title": "Tela de login com react",
       "imageSrc": "projects/tela de login.png",
-      "description": "projeto com o professor Rodolfo do canal DevClub, onde eu aprimorei meus conhecimentos com react, fiz toda a integração com o banco de dados.",
+      "description": "Projeto com o professor Rodolfo, contém o Back-end eo Front.",
       "skills": ["React", "Express", "Node","MongoDb","Prisma.Io"],
       "demo": "https://www.example.com",
       "source": "https://github.com/Davidson-Tavares/Tela-de-login-com-react.git"
@@ -10,8 +10,8 @@
     {
       "title": "Jogo mata Mosquito",
       "imageSrc": "projects/jogo mata mosquito.png",
-      "description": "This is a project made to learn the latest languages by building an app.",
-      "skills": ["JavaScript","Botstrap","Html"],
+      "description": "Este projeto , foi realizado durante o curso na udemy, para praticar a logica de programação.",
+      "skills": ["JavaScript","Html", "CSS"],
       "demo": "https://davidson-tavares.github.io/jogo-mata-mosquito/",
       "source": "https://github.com/Davidson-Tavares/jogo-mata-mosquito"
     },

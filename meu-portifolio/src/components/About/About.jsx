@@ -12,7 +12,7 @@ const About = () => {
             <div className={Styles.content}>
 
                 <img
-                    src={getImageUrl('about/foto-principal3.png')}
+                    src={getImageUrl('about/beca.png')}
                     alt=" Me sitting whit a leptop"
                     className={Styles.aboutImage}
                 />
