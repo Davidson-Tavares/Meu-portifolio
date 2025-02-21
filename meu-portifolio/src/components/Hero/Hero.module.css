@@ -9,6 +9,7 @@
     z-index: 1;
     margin-left:10%;
     margin-right: 10%;
+   
 }
 
 .content{
@@ -64,19 +65,9 @@
     z-index: 0;
   }
   
-  .bottomBlur{
-    position:absolute;
-    width:70vw;
-    height: 50vw;
-    min-width: 350px;
-    min-width: 250px;
-    top: 246px;
-    right: -25vw;
-    border-radius: 764px;
-    background: var(--color-blur);
-    filter: blur(100px);
-    z-index: 0;
-  }
+  
+  
+
 
   .emoji{
     z-index: 1;

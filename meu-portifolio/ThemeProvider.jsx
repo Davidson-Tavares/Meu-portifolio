@@ -1,5 +1,4 @@
-// ThemeProvider.js
-//importações dos Hooks do react
+
 import React, { createContext, useContext, useState, useEffect } from 'react';
 
 const ThemeContext = createContext();

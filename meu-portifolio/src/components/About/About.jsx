@@ -13,7 +13,7 @@ const About = () => {
 
                 <img
                     src={getImageUrl('about/beca.png')}
-                    alt=" Me sitting whit a leptop"
+                    alt=" foto juramento"
                     className={Styles.aboutImage}
                 />
 
