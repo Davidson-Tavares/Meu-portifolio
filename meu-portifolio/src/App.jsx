@@ -8,19 +8,25 @@ import Projects from "./components/Projects/Projects"
 import Contact from "./components/Contact/Contact"
 import { ThemeProvider } from '../ThemeProvider'
 
+import PixelCard from './components/Pixel/PixelCard'
 function App() {
-  
+
   return (
-<ThemeProvider>
-    <div className={Styles.App}  >
+
+
+    <ThemeProvider>
+      <div className={Styles.App}  >
       <Navbar />
       <Hero />
       <About />
       <Experience />
       <Projects />
-      <Contact />
-    </div>
-</ThemeProvider>
+      <Contact />        
+      </div>
+    </ThemeProvider>
+
+
+
   )
 }
 
