@@ -1,0 +1,174 @@
+@import "../../vars.css";
+
+.navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 0;
+    margin: 0 10%;
+    
+}
+
+
+.logo {
+    color: var(--color-text);
+}
+.imgLogo{
+width: 15%;
+}
+
+.imgLogo:hover{
+    content: url("../../../assets/nav/D-azul.png");
+}
+
+.menuBtn{
+    display: none;
+}
+
+.menu {
+    display: flex;
+}
+
+
+
+.menuItens {
+    display: flex;
+    gap: 47px;
+    list-style: none;
+    
+}
+
+.menuItens a {
+    font-size: 25px;
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+.menuItens a:hover{
+    color: var(--color-primary);
+}
+
+/*/////////////DARK MODE*/
+
+.darkMode{
+    color: var(--color-text);
+    margin-left: 8%;
+}
+
+.btndark{
+    background-color: var(--color-bg);
+    border: none;
+
+}
+
+.imgdark{
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    width: 20%;
+
+}
+.imglight{
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    width: 20%;
+
+}
+
+
+
+
+/*/////////// responsividade */
+
+@media screen  and (max-width: 830px){
+    
+  
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu {
+        position: absolute;
+        right: 0;
+        margin-right: 10%;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 11px;
+        z-index: 3;
+    }
+    .logo {
+        color: var(--color-text);
+    }
+    .imgLogo{
+    width: 15%;
+    }
+
+    
+
+    .menuBtn {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menuItens {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 13px;
+
+        /*Adicionar o degrade ao menu itens.*/
+
+      border-radius: 10px;
+      background: rgb(25, 55, 109);
+      background:linear-gradient(
+        0deg,
+         rgba(25, 55, 109,0.2)0%,
+         rgba(25, 55, 109, 1) 100%
+
+      );
+
+      padding: 24px 33px;
+      box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+
+    }
+
+    .menuOpen{
+        display: flex;
+        z-index: 1;
+    }
+
+    .darkMode{
+        position: absolute;
+        right: 0;
+        margin-right: 20%;
+        flex-direction: column;
+        align-items: flex-end;
+        z-index: 1;
+        margin-top: 2%;
+        
+    }
+
+
+}
+
+@media screen and (max-width: 520px) {
+
+    .darkMode{
+        margin-right: 30%;
+        
+    }
+
+   
+ 
+}
+@media screen and (max-width: 320px) {
+
+    .darkMode{
+        margin-right: 30%;
+        width: 100%;
+        
+    }
+}
+
+

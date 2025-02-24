@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import './PixelCard.css';
-import Navbar from "../Navbar/Navbar";
+import Navbar2 from "../Navbar2/Navbar2";
+
 
 
 class Pixel {
@@ -267,11 +268,9 @@ export default function PixelCard({
       onBlur={finalNoFocus ? undefined : onBlur}
       tabIndex={finalNoFocus ? -1 : 0}
     >
+    <Navbar2 />
 
-    <Navbar />
-
-     
-      <canvas
+     <canvas
         className="piexl-canvas"
         ref={canvasRef}
       />
