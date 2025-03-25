@@ -8,26 +8,32 @@ import Projects from "./components/Projects/Projects"
 import Contact from "./components/Contact/Contact"
 import { ThemeProvider } from '../ThemeProvider'
 
+import Particles from './components/Particles/Particles '
+
+
 import PixelCard from './components/Pixel/PixelCard'
+
 function App() {
 
   return (
-
-
     <ThemeProvider>
-      <div className={Styles.App}  >
+      <div className={Styles.App}   >
+
+
       <Navbar />
       <Hero />
       <About />
       <Experience />
       <Projects />
-      <Contact />        
+      <Contact /> 
+
+      import Particles from './Particles';
+
+
+
+      
       </div>
     </ThemeProvider>
-
-
-
-  )
+    )
 }
-
 export default App

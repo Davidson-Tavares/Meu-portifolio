@@ -2,12 +2,31 @@ import React from "react";
 import Styles from "../About/About.module.css"
 import { getImageUrl } from "../../ultis";
 import history from "../../data/history.json";
+import Particles from "../Particles/Particles ";
+
 
 const About = () => {
 
     return (
 
-        <section className={Styles.container} id="about">
+        <section className={Styles.container}
+        id="about">
+            
+           
+  <Particles
+  className={Styles.particles}
+    particleColors={['#ffffff', '#ffffff']}
+    particleCount={2500}
+    particleSpread={15}
+    speed={0.1}
+    particleBaseSize={100}
+    moveParticlesOnHover={true}
+    alphaParticles={true}
+    disableRotation={false}
+  />
+
+            
+            
             <h2 className={Styles.title}>Formação</h2>
             <div className={Styles.content}>
 
@@ -48,8 +67,10 @@ const About = () => {
 
 
 
-
+        
         </section>
+        
+       
     )
 }
 
